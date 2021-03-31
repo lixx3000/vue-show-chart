@@ -1,0 +1,56 @@
+{
+  "name": "vue-show-chart",
+  "version": "1.0.0",
+  "description": "在Vue中使用echart，如果没有数据，显示暂无数据或自定义组件，而不显示图表",
+  "main": "index.js",
+  "files": [
+    "src",
+    "dist/*.js"
+  ],
+  "scripts": {
+    "build": "webpack --config ./build/webpack.prod.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lixx3000/vue-show-chart.git"
+  },
+  "keywords": [
+    "vue",
+    "echart",
+    "directive"
+  ],
+  "author": "李宇轩",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lixx3000/vue-show-chart/issues"
+  },
+  "homepage": "https://github.com/lixx3000/vue-show-chart/blob/main/README.md",
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.0",
+    "cssnano": "^4.1.10",
+    "echarts": "^5.0.2",
+    "less": "^4.1.1",
+    "less-loader": "^8.0.0",
+    "mini-css-extract-plugin": "^1.4.0",
+    "postcss-loader": "^5.2.0",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "vue": "^2.6.12",
+    "vue-loader": "^15.9.6",
+    "vue-style-loader": "^4.1.3",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-merge": "^5.7.3",
+    "webpackbar": "^5.0.0-3"
+  },
+  "peerDependencies": {},
+  "dependencies": {}
+}
