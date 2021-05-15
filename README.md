@@ -7,3 +7,16 @@
 
 > yarn add vue-show-chart
 
+目前功能较少，主要是通过命令，控制echart图表显示的时机
+
+使用方法，可以在入口main.js进行安装
+
+```javascript
+import VueShowChart from 'vue-show-chart'
+Vue.use(VueShowChart, { text: '暂无数据' });
+```
+在echart挂载的那个dom上声明该命令即可
+
+```javascript
+<div ref="echart" v-show-chart></div>
+```
