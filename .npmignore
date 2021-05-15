@@ -1,7 +1,2 @@
 /build
 /node_modules
-.*
-LICENSE
-package.json
-package-lock.json
-README.md
