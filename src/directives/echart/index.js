@@ -1,7 +1,8 @@
 import { NormalText as NoData } from '../../components/no_data/index';
 import { isArray } from '../../utils/types';
+import nextTick from '../../utils/nextTick';
 
-export default function updateDom (Vue, el, option, text) {
+export default function updateDom (Vue, el, echartInstance, option, text) {
   let hasData = false;
   let series = option.series;
   series = isArray(series) ? series : [series];
@@ -21,5 +22,9 @@ export default function updateDom (Vue, el, option, text) {
       el.appendChild(instance.$mount().$el);
   } else {
     el.firstChild.style.display = 'block';
+    if (noDataDom) {
+      nextTick(echartInstance.resize);
+    }
   }
-}
+  return hasData;
+};
