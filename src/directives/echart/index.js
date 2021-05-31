@@ -4,6 +4,9 @@ import nextTick from '../../utils/nextTick';
 
 export default function updateDom (Vue, el, echartInstance, option, text) {
   let hasData = false;
+  if (option.baseOption) {
+    option = option.baseOption;
+  }
   let series = option.series;
   series = isArray(series) ? series : [series];
   series.forEach(({ data }) => {
